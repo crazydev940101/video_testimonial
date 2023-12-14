@@ -107,7 +107,7 @@ function video_testimonial_submit() {
                 // Retrieve the marketing team email addresses from the settings
                 $marketing_emails = get_option('marketing_emails');
                 if(empty($marketing_emails)) {
-                    $marketing_emails = 'dave@operationdental.com';
+                    $marketing_emails = 'test@gmail.com';
                 }
                 $marketing_team_emails = explode(',', $marketing_emails);
                 $marketing_team_emails = array_map('trim', $marketing_team_emails);
