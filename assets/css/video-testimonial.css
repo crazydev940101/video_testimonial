@@ -1,0 +1,140 @@
+/**------------------------- Record Part -------------------------*/
+
+#video-testimonial-form {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#video-testimonial-form h2 {
+    margin-top: 20px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid rgba(0,0,0,.075);
+  background-color: #d9d9d9;
+  margin-top: 30px;
+}
+
+#video-preview {
+    width: 100%;
+}
+
+#controls-bar {
+  position: relative;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+#controls-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#controls-bar button:disabled {
+    background-color: gray !important;
+    cursor: not-allowed;
+}
+
+.record-release-text {
+  text-align: left;
+}
+
+.record-release-text p {
+    line-height: normal;
+    margin: 0 0 10px 0;
+    color: rgb(0,0,0);
+}
+
+#timer-bar {
+  flex: 1;
+  height: 25px;
+  margin: 0 10px 10px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+
+#timer {
+  height: 100%;
+}
+
+#record-button {
+    display:none;
+}
+
+/**------------------------- Submit Part -------------------------*/
+
+.submit-container .form-group label {
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.submit-container .form-group input {
+    width: 100%;
+    color: black !important;
+    border: 1px solid #c4c4c4;
+}
+
+#submit-button {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#submit-button:disabled {
+    background-color: gray !important;
+    cursor: not-allowed;
+}
+
+#video-release-checkbox {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-inline {
+    font-size: 100% !important;
+    font-weight: 300 !important;
+    margin-top: 5px;
+    line-height: normal;
+    color: rgb(0,0,0);
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 5px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.go-to-review-page {
+    font-size: clamp(12px,4vw,18px);
+    margin-bottom: 20px;
+}
