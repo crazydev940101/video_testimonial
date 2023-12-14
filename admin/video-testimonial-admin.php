@@ -11,7 +11,7 @@ function video_testimonial_settings_section() {
 
 // Add fields for marketing team email addresses and video release checkbox label
 function video_testimonial_settings_fields() {
-    $default_marketing_email = 'dave@operationdental.com';
+    $default_marketing_email = 'test@gmail.com';
     $default_video_release_label = 'I grant permission for [od_practicename] to use this testimonial video across their social media and web channels. I understand that I can cancel this authorization at any time by sending a written letter to the practice canceling my authorization to release.';
 
     $marketing_emails = get_option('marketing_emails', $default_marketing_email);
@@ -86,7 +86,7 @@ add_action('admin_menu', 'register_video_testimonial_settings_page');
 
 // Set default options on plugin/theme activation
 function set_default_options() {
-    $default_marketing_email = 'dave@operationdental.com';
+    $default_marketing_email = 'test@gmail.com';
     $default_video_release_label = 'I grant permission for [od_practicename] to use this testimonial video across their social media and web channels. I understand that I can cancel this authorization at any time by sending a written letter to the practice canceling my authorization to release.';
     
     add_option('marketing_emails', $default_marketing_email);
